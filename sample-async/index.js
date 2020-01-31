@@ -62,18 +62,3 @@ console.log("入ったあと");
 
 
 
-
-
-(async () => {
-  console.log("PROMISES##########################");
-  
-  const promise1 = new Promise(resolve => setTimeout(() => resolve(new Error('promise1')), 1000));
-
-  const promise2 = new Promise(resolve => setTimeout(() => resolve(new Error('promise2')), 3000));
-  
-  const promise3 = new Promise(resolve => setTimeout(() => resolve(new Error('promise3')), 2000));
-
-  console.log(await promise1);
-  console.log(await promise2);
-  console.log(await promise3);
-})();
